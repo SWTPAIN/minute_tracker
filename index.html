@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Minute Tracker</title>
+  <!-- <base href="/"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minute Tracker</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="app/css/style.css">
 </head>
 <body>
-    <h1>testing</h1>
-    <script src="//localhost:35729/livereload.js"></script>
+<div ng-controller="NavbarCtrl" class="navbar navbar-default navbar-static-top"
+     role="navigation" bs-navbar>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">
+      <span class="glyphicon glyphicon-time"></span>
+      Minute<strong>Tracker</strong></a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li data-match-route="/$"><a href="/">Home</a></li>
+  </ul>
+</div>
+
+<div ng-view></div>
+    
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="bower_components/jqplot/jquery.jqplot.js"></script>
+  <script type="text/javascript" src="bower_components/jqplot/plugins/jqplot.pierenderer.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-chart/src/chart.js"></script>
+
+  <script type="text/javascript" src="bower_components/angular-local-storage/angular-local-storage.min.js"></script>
+
+  <script type="text/javascript" src="app/js/app.js"></script>
+
 </body>
 </html>
