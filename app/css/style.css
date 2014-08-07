@@ -1,0 +1,45 @@
+.bg-default {
+  background-color: #fafcfc;
+}
+.bg-peace {
+  background-color: #2ecc71;
+}
+.bg-success {
+  background-color: #fff336;
+}
+.bg-info {
+  background-color: #2980b9;
+}
+.bg-danger {
+  background-color: #ff726b;
+}
+
+
+.button-peace {
+  background-color: #23B663;
+}
+.button-success {
+  background-color: #fff012;
+}
+.button-info {
+  background-color: #15699F;
+}
+.button-danger {
+  background-color: #ff4035;
+}
+
+.btn-group-vertical {
+  margin-left: 20px; 
+}
+
+.btn-group-vertical > button{
+    margin-bottom:20px;
+    border-radius:5px !important;
+}
+
+.btn {
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+}
