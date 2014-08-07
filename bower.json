@@ -1,0 +1,16 @@
+{
+  "name": "minute_tracker",
+  "version": "0.0.1",
+  "authors": [
+    "KaFaiC <choikafai2004@gmail.com>"
+  ],
+  "description": "A simple app to track time spent",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

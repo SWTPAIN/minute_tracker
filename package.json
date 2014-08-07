@@ -1,0 +1,15 @@
+{
+  "name": "minute_tracker",
+  "version": "0.0.1",
+  "description": "A simple app for tracking time spent",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KaFaiC",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
