@@ -32,5 +32,10 @@
   },
   "_source": "git://github.com/FortAwesome/Font-Awesome.git",
   "_target": "~4.1.0",
+<<<<<<< HEAD
   "_originalSource": "fontawesome"
+=======
+  "_originalSource": "fontawesome",
+  "_direct": true
+>>>>>>> 4558036bea52bf7555909744143f5d90b94c59d9
 }

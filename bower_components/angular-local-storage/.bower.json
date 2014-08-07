@@ -35,5 +35,10 @@
   },
   "_source": "git://github.com/grevory/angular-local-storage.git",
   "_target": "~0.0.5",
+<<<<<<< HEAD
   "_originalSource": "angular-local-storage"
+=======
+  "_originalSource": "angular-local-storage",
+  "_direct": true
+>>>>>>> 4558036bea52bf7555909744143f5d90b94c59d9
 }
