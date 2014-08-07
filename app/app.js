@@ -5,6 +5,10 @@ angular.module('MinuteTracker', ['ngRoute'])
         templateUrl: 'app/views/main.html',
         controller: 'TrackerController'
       })
+      .when('/stat', {
+        templateUrl: 'app/views/stat.html',
+        controller: 'StatController'
+      })
       .otherwise({
         redirectTo: '/'
       });

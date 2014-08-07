@@ -1,12 +1,9 @@
 angular.module('MinuteTracker')
-  .controller('TrackerController', ['$scope', '$rootScope', function($scope, $rootScope){
-    $scope.activities = [
-      {name: 'Reading', color: 'peace'},
-      {name: 'Web surfing', color: 'info'},
-      {name: 'Writing code', color: 'success'},
-      {name: 'Heaing', color: 'danger'}
-    ];
+  .controller('TrackerController', ['$scope', '$rootScope', 'activities', 'timer', function($scope, $rootScope, activities, timer){
+    $scope.activities = activities.getAll();
+    $scope.timer = timer;
     $scope.setCurrentActivity = function(activity){
+      activities.setActive(activity);
       $rootScope.currentActivity = activity;
-    }
+    };
   }])
