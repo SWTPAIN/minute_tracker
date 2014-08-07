@@ -19,7 +19,6 @@
     "angular": "~1.2.21",
     "angular-route": "~1.2.21",
     "moment": "~2.8.1",
-    "angular-local-storage": "~0.0.5",
-    "angular-ui-chart": "~0.0.1"
+    "angular-local-storage": "~0.0.5"
   }
 }

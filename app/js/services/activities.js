@@ -1,13 +1,25 @@
 angular.module('MinuteTracker')
   .factory('activities', ['$rootScope', '$interval', 'timer', function($rootScope, $interval, timer){
-    var activities = [
-      {name: 'Reading', color: 'peace', duration: 0},
-      {name: 'Web surfing', color: 'info', duration: 0},
-      {name: 'Writing code', color: 'success', duration: 0},
-      {name: 'Heaing', color: 'danger', duration: 0}
-    ];
+    var activities = [];
     var currentActivity;
     var intervalPromise;
+
+    var Activity = function(name, color, duration){
+      this.name = name;
+      this.color = color;
+      this.duration = duration;
+    }
+
+    Activity.prototype.getDurationPct = function(){
+      return (this.duration / activities.reduce(function(sum, num){
+        return sum+ num.duration
+      },0))*100
+    }
+
+    activities.push(new Activity('Reading', 'peace', 0))
+    activities.push(new Activity('Web surfing', 'info', 0))
+    activities.push(new Activity('Writing code', 'success', 10))
+    activities.push(new Activity('Hea-ing', 'danger', 50))
 
     return {
       getAll: function(){

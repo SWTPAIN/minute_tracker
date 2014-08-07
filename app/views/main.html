@@ -1,10 +1,12 @@
-<div class="col-sm-2">
-  <div class="btn-group-vertical">
-    <button ng-repeat="activity in activities" type="button" class="btn button-{{activity.color}}" ng-click="setCurrentActivity(activity)">{{activity.name}}{{activity.duration}}</button>
+<div>
+  <div class="col-sm-2">
+    <div class="btn-group-vertical">
+      <button ng-repeat="activity in activities" type="button" class="btn button-{{activity.color}}" ng-click="setCurrentActivity(activity)">{{activity.name}}{{activity.duration}}</button>
+    </div>
   </div>
-</div>
-<div class="col-sm-10">
-  <div class="timer-wrapper">
-  <span class="number" >{{timer.getTime()}} seconds.</span>
+  <div class="col-sm-10">
+    <div class="timer-wrapper">
+    <span class="number" >{{timer.getTime()}} seconds.</span>
+    </div>
   </div>
 </div>

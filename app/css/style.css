@@ -59,3 +59,11 @@
   text-align: center;
   text-shadow: 0 0 5px rgba(200, 200, 200, 1);
 }
+
+.progress-bar{
+  text-align: right;
+}
+
+.panel-heading{
+  text-align: center;
+}
