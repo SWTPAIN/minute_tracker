@@ -18,8 +18,8 @@ angular.module('MinuteTracker')
 
     activities.push(new Activity('Reading', 'peace', 0))
     activities.push(new Activity('Web surfing', 'info', 0))
-    activities.push(new Activity('Writing code', 'success', 10))
-    activities.push(new Activity('Hea-ing', 'danger', 50))
+    activities.push(new Activity('Writing code', 'success', 0))
+    activities.push(new Activity('Hea-ing', 'danger', 0))
 
     return {
       getAll: function(){
