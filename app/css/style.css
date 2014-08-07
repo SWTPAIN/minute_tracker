@@ -1,3 +1,8 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  transition: background-color 0.7s;
+}
+
 .bg-default {
   background-color: #fafcfc;
 }
@@ -13,7 +18,6 @@
 .bg-danger {
   background-color: #ff726b;
 }
-
 
 .button-peace {
   background-color: #23B663;
@@ -39,9 +43,11 @@
 
 .btn {
   border: none;
-  height: 40px;
+  height: 50px;
   border-radius: 20px;
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  text-overflow: ellipsis;
+
 }
 
 .timer-wrapper {
@@ -66,4 +72,13 @@
 
 .panel-heading{
   text-align: center;
+}
+
+.ng-enter {
+  transition: 0.75s;
+  opacity: 0;
+}
+
+.ng-enter-active{
+  opacity: 1;
 }

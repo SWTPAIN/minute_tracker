@@ -1,4 +1,4 @@
-angular.module('MinuteTracker', ['ngRoute'])
+angular.module('MinuteTracker', ['ngRoute', 'ngAnimate'])
   .config(['$routeProvider',function($routeProvider){
     $routeProvider
       .when('/', {
